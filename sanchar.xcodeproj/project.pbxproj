@@ -5857,7 +5857,7 @@
 					"$(inherited)",
 				);
 				LINK_WITH_STANDARD_LIBRARIES = YES;
-				MARKETING_VERSION = 5.1.1.1;
+				MARKETING_VERSION = 1.0.101;
 				OTHER_CFLAGS = (
 					"-DBCTBX_LOG_DOMAIN=\\\"ios\\\"",
 					"-DCHECK_VERSION_UPDATE=FALSE",
@@ -5984,7 +5984,7 @@
 					"$(inherited)",
 				);
 				LINK_WITH_STANDARD_LIBRARIES = YES;
-				MARKETING_VERSION = 5.1.1.1;
+				MARKETING_VERSION = 1.0.101;
 				OTHER_CFLAGS = (
 					"-DBCTBX_LOG_DOMAIN=\\\"ios\\\"",
 					"-DCHECK_VERSION_UPDATE=FALSE",
@@ -6110,7 +6110,7 @@
 					"$(inherited)",
 				);
 				LINK_WITH_STANDARD_LIBRARIES = YES;
-				MARKETING_VERSION = 5.1.1.1;
+				MARKETING_VERSION = 1.0.101;
 				OTHER_CFLAGS = (
 					"-DBCTBX_LOG_DOMAIN=\\\"ios\\\"",
 					"-DCHECK_VERSION_UPDATE=FALSE",
@@ -6235,7 +6235,7 @@
 					"$(inherited)",
 				);
 				LINK_WITH_STANDARD_LIBRARIES = YES;
-				MARKETING_VERSION = 5.1.1.1;
+				MARKETING_VERSION = 1.0.101;
 				OTHER_CFLAGS = (
 					"-DBCTBX_LOG_DOMAIN=\\\"ios\\\"",
 					"-DCHECK_VERSION_UPDATE=FALSE",
