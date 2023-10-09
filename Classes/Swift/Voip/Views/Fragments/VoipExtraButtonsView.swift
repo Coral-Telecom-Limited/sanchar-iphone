@@ -69,10 +69,10 @@ class VoipExtraButtonsView: UIStackView {
 		})
 		row1.addArrangedSubview(stats)
 		
-		let chats = VoipExtraButton(text: VoipTexts.call_action_chat, buttonTheme: VoipTheme.call_action("voip_call_chat"),withbBoucinCounterDataSource:CallsViewModel.shared.currentCallUnreadChatMessageCount,  onClickAction: {
-			ControlsViewModel.shared.goToChatEvent.notifyAllObservers(with: true)
-		})
-		row1.addArrangedSubview(chats)
+//		let chats = VoipExtraButton(text: VoipTexts.call_action_chat, buttonTheme: VoipTheme.call_action("voip_call_chat"),withbBoucinCounterDataSource:CallsViewModel.shared.currentCallUnreadChatMessageCount,  onClickAction: {
+//			ControlsViewModel.shared.goToChatEvent.notifyAllObservers(with: true)
+//		})
+//		row1.addArrangedSubview(chats)
 			
 		addArrangedSubview(row1)
 		row1.matchParentSideBorders().done()
