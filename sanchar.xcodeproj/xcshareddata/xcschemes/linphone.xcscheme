@@ -14,10 +14,24 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "F0BB8BD41936208100974404"
-               BuildableName = "liblinphoneTester.app"
-               BlueprintName = "liblinphoneTester"
-               ReferencedContainer = "container:linphone.xcodeproj">
+               BlueprintIdentifier = "1D6058900D05DD3D006BFB54"
+               BuildableName = "sanchar.app"
+               BlueprintName = "sanchar"
+               ReferencedContainer = "container:sanchar.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "NO"
+            buildForArchiving = "NO"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "F0F951FF1A6AEB1000254160"
+               BuildableName = "linphoneTests.xctest"
+               BlueprintName = "linphoneTests"
+               ReferencedContainer = "container:sanchar.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -30,10 +44,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "F0BB8BD41936208100974404"
-            BuildableName = "liblinphoneTester.app"
-            BlueprintName = "liblinphoneTester"
-            ReferencedContainer = "container:linphone.xcodeproj">
+            BlueprintIdentifier = "1D6058900D05DD3D006BFB54"
+            BuildableName = "sanchar.app"
+            BlueprintName = "sanchar"
+            ReferencedContainer = "container:sanchar.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <Testables>
@@ -41,10 +55,10 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "F08F118319C09C6A007D70C2"
-               BuildableName = "liblinphoneTesterTests.xctest"
-               BlueprintName = "liblinphoneTesterTests"
-               ReferencedContainer = "container:linphone.xcodeproj">
+               BlueprintIdentifier = "F0F951FF1A6AEB1000254160"
+               BuildableName = "linphoneTests.xctest"
+               BlueprintName = "linphoneTests"
+               ReferencedContainer = "container:sanchar.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -63,12 +77,26 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "F0BB8BD41936208100974404"
-            BuildableName = "liblinphoneTester.app"
-            BlueprintName = "liblinphoneTester"
-            ReferencedContainer = "container:linphone.xcodeproj">
+            BlueprintIdentifier = "1D6058900D05DD3D006BFB54"
+            BuildableName = "sanchar.app"
+            BlueprintName = "sanchar"
+            ReferencedContainer = "container:sanchar.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
+      <EnvironmentVariables>
+         <EnvironmentVariable
+            key = "OS_ACTIVITY_MODE"
+            value = ""
+            isEnabled = "YES">
+         </EnvironmentVariable>
+      </EnvironmentVariables>
+      <AdditionalOptions>
+         <AdditionalOption
+            key = "NSZombieEnabled"
+            value = "YES"
+            isEnabled = "YES">
+         </AdditionalOption>
+      </AdditionalOptions>
    </LaunchAction>
    <ProfileAction
       buildConfiguration = "Release"
@@ -80,10 +108,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "F0BB8BD41936208100974404"
-            BuildableName = "liblinphoneTester.app"
-            BlueprintName = "liblinphoneTester"
-            ReferencedContainer = "container:linphone.xcodeproj">
+            BlueprintIdentifier = "1D6058900D05DD3D006BFB54"
+            BuildableName = "sanchar.app"
+            BlueprintName = "sanchar"
+            ReferencedContainer = "container:sanchar.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
@@ -91,7 +119,7 @@
       buildConfiguration = "Debug">
    </AnalyzeAction>
    <ArchiveAction
-      buildConfiguration = "Release"
+      buildConfiguration = "Distribution"
       revealArchiveInOrganizer = "YES">
    </ArchiveAction>
 </Scheme>

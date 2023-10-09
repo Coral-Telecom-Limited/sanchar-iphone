@@ -100,7 +100,7 @@
 		6180D6FE21EE41A800AD9CB6 /* QuickLook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6180D6FD21EE41A800AD9CB6 /* QuickLook.framework */; };
 		61AE364F20C00B370089D9D3 /* ShareViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 61AE364E20C00B370089D9D3 /* ShareViewController.m */; };
 		61AE365220C00B370089D9D3 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 61AE365020C00B370089D9D3 /* MainInterface.storyboard */; };
-		61AE365620C00B370089D9D3 /* linphoneExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 61AE364B20C00B370089D9D3 /* linphoneExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		61AE365620C00B370089D9D3 /* sancharExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 61AE364B20C00B370089D9D3 /* sancharExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		61AEBEBD2191990A00F35E7F /* DevicesListView.m in Sources */ = {isa = PBXBuildFile; fileRef = 61AEBEBC2191990A00F35E7F /* DevicesListView.m */; };
 		61AEBEBF2191991F00F35E7F /* DevicesListView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 61AEBEBE2191991F00F35E7F /* DevicesListView.xib */; };
 		61AEBEC62191E47500F35E7F /* chevron_list_close.png in Resources */ = {isa = PBXBuildFile; fileRef = 61AEBEC52191E47500F35E7F /* chevron_list_close.png */; };
@@ -1015,7 +1015,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				61AE365620C00B370089D9D3 /* linphoneExtension.appex in Embed App Extensions */,
+				61AE365620C00B370089D9D3 /* sancharExtension.appex in Embed App Extensions */,
 				EA8CB833239F96CA00C330CC /* msgNotificationContent.appex in Embed App Extensions */,
 				EA0007A62356008F003CC6BF /* msgNotificationService.appex in Embed App Extensions */,
 			);
@@ -1041,7 +1041,7 @@
 		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1D3623240D0F684500981E51 /* LinphoneAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LinphoneAppDelegate.h; sourceTree = "<group>"; };
 		1D3623250D0F684500981E51 /* LinphoneAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LinphoneAppDelegate.m; sourceTree = "<group>"; };
-		1D6058910D05DD3D006BFB54 /* linphone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = linphone.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D6058910D05DD3D006BFB54 /* sanchar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = sanchar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DEA3B36C8EF94C6E63E1501 /* Pods_msgNotificationContent.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_msgNotificationContent.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		1E75101E1251C3472B08E447 /* Pods-msgNotificationContent.distribution.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-msgNotificationContent.distribution.xcconfig"; path = "Target Support Files/Pods-msgNotificationContent/Pods-msgNotificationContent.distribution.xcconfig"; sourceTree = "<group>"; };
@@ -1095,7 +1095,7 @@
 		24E1C7B91F9A235500D3F981 /* Contacts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Contacts.framework; path = System/Library/Frameworks/Contacts.framework; sourceTree = SDKROOT; };
 		288765FC0DF74451002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		32CA4F630368D1EE00C91783 /* linphone_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = linphone_Prefix.pch; sourceTree = "<group>"; };
+		32CA4F630368D1EE00C91783 /* sanchar_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sanchar_Prefix.pch; sourceTree = "<group>"; };
 		340751961506459A00B89C47 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
 		340751E5150F38FC00B89C47 /* UIVideoButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIVideoButton.h; sourceTree = "<group>"; };
 		340751E6150F38FD00B89C47 /* UIVideoButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIVideoButton.m; sourceTree = "<group>"; };
@@ -1195,7 +1195,7 @@
 		6187B1DE24B3272600D580FB /* hu */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = hu; path = "hu.lproj/SideMenuView~ipad.strings"; sourceTree = "<group>"; };
 		6187B1DF24B3272600D580FB /* hu */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = hu; path = hu.lproj/StatusBarView.strings; sourceTree = "<group>"; };
 		6187B1E024B3272700D580FB /* hu */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = hu; path = hu.lproj/TabBarView.strings; sourceTree = "<group>"; };
-		61AE364B20C00B370089D9D3 /* linphoneExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = linphoneExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		61AE364B20C00B370089D9D3 /* sancharExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = sancharExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		61AE364D20C00B370089D9D3 /* ShareViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShareViewController.h; sourceTree = "<group>"; };
 		61AE364E20C00B370089D9D3 /* ShareViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShareViewController.m; sourceTree = "<group>"; };
 		61AE365120C00B370089D9D3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
@@ -2494,8 +2494,8 @@
 		19C28FACFE9D520D11CA2CBB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				1D6058910D05DD3D006BFB54 /* linphone.app */,
-				61AE364B20C00B370089D9D3 /* linphoneExtension.appex */,
+				1D6058910D05DD3D006BFB54 /* sanchar.app */,
+				61AE364B20C00B370089D9D3 /* sancharExtension.appex */,
 				EA5F25D9232BD3E200475F2E /* msgNotificationService.appex */,
 				EA8CB827239F96CA00C330CC /* msgNotificationContent.appex */,
 			);
@@ -2634,7 +2634,7 @@
 		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
 			isa = PBXGroup;
 			children = (
-				32CA4F630368D1EE00C91783 /* linphone_Prefix.pch */,
+				32CA4F630368D1EE00C91783 /* sanchar_Prefix.pch */,
 				29B97316FDCFA39411CA2CEA /* main.m */,
 			);
 			name = "Other Sources";
@@ -3929,9 +3929,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		1D6058900D05DD3D006BFB54 /* linphone */ = {
+		1D6058900D05DD3D006BFB54 /* sanchar */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "linphone" */;
+			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "sanchar" */;
 			buildPhases = (
 				3CC51A3A722101BAA8EB8507 /* [CP] Check Pods Manifest.lock */,
 				1D60588D0D05DD3D006BFB54 /* Resources */,
@@ -3950,14 +3950,14 @@
 				EA8CB83C239F9A3000C330CC /* PBXTargetDependency */,
 				61AE365520C00B370089D9D3 /* PBXTargetDependency */,
 			);
-			name = linphone;
+			name = sanchar;
 			productName = linphone;
-			productReference = 1D6058910D05DD3D006BFB54 /* linphone.app */;
+			productReference = 1D6058910D05DD3D006BFB54 /* sanchar.app */;
 			productType = "com.apple.product-type.application";
 		};
-		61AE364A20C00B370089D9D3 /* linphoneExtension */ = {
+		61AE364A20C00B370089D9D3 /* sancharExtension */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 61AE366120C00B370089D9D3 /* Build configuration list for PBXNativeTarget "linphoneExtension" */;
+			buildConfigurationList = 61AE366120C00B370089D9D3 /* Build configuration list for PBXNativeTarget "sancharExtension" */;
 			buildPhases = (
 				61AE364720C00B370089D9D3 /* Sources */,
 				61AE364820C00B370089D9D3 /* Frameworks */,
@@ -3967,9 +3967,9 @@
 			);
 			dependencies = (
 			);
-			name = linphoneExtension;
+			name = sancharExtension;
 			productName = linphoneExtension;
-			productReference = 61AE364B20C00B370089D9D3 /* linphoneExtension.appex */;
+			productReference = 61AE364B20C00B370089D9D3 /* sancharExtension.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
 		EA5F25D8232BD3E200475F2E /* msgNotificationService */ = {
@@ -4020,7 +4020,7 @@
 				LastUpgradeCheck = 1130;
 				TargetAttributes = {
 					1D6058900D05DD3D006BFB54 = {
-						DevelopmentTeam = Z2V957B3D6;
+						DevelopmentTeam = G4B324GPH6;
 						LastSwiftMigration = 1030;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
@@ -4043,7 +4043,7 @@
 					};
 					61AE364A20C00B370089D9D3 = {
 						CreatedOnToolsVersion = 9.2;
-						DevelopmentTeam = Z2V957B3D6;
+						DevelopmentTeam = G4B324GPH6;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.ApplicationGroups.iOS = {
@@ -4053,7 +4053,7 @@
 					};
 					EA5F25D8232BD3E200475F2E = {
 						CreatedOnToolsVersion = 11.0;
-						DevelopmentTeam = Z2V957B3D6;
+						DevelopmentTeam = G4B324GPH6;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.ApplicationGroups.iOS = {
@@ -4063,7 +4063,7 @@
 					};
 					EA8CB826239F96CA00C330CC = {
 						CreatedOnToolsVersion = 10.3;
-						DevelopmentTeam = Z2V957B3D6;
+						DevelopmentTeam = G4B324GPH6;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.ApplicationGroups.iOS = {
@@ -4073,7 +4073,7 @@
 					};
 				};
 			};
-			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "linphone" */;
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "sanchar" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 1;
@@ -4109,8 +4109,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				1D6058900D05DD3D006BFB54 /* linphone */,
-				61AE364A20C00B370089D9D3 /* linphoneExtension */,
+				1D6058900D05DD3D006BFB54 /* sanchar */,
+				61AE364A20C00B370089D9D3 /* sancharExtension */,
 				EA5F25D8232BD3E200475F2E /* msgNotificationService */,
 				EA8CB826239F96CA00C330CC /* msgNotificationContent */,
 			);
@@ -5323,7 +5323,7 @@
 /* Begin PBXTargetDependency section */
 		61AE365520C00B370089D9D3 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 61AE364A20C00B370089D9D3 /* linphoneExtension */;
+			target = 61AE364A20C00B370089D9D3 /* sancharExtension */;
 			targetProxy = 61AE365420C00B370089D9D3 /* PBXContainerItemProxy */;
 		};
 		EA8CB83A239F9A3000C330CC /* PBXTargetDependency */ = {
@@ -5826,13 +5826,13 @@
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = Z2V957B3D6;
+				DEVELOPMENT_TEAM = G4B324GPH6;
 				ENABLE_BITCODE = NO;
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = linphone_Prefix.pch;
+				GCC_PREFIX_HEADER = sanchar_Prefix.pch;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"$(inherited)",
 					"DEBUG=1",
@@ -5848,7 +5848,8 @@
 				);
 				IBC_MODULE = linphoneapp;
 				IBSC_MODULE = linphoneapp;
-				INFOPLIST_FILE = "linphone-Info.plist";
+				INFOPLIST_FILE = "sanchar-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = Sanchar;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
@@ -5866,9 +5867,9 @@
 					"-DLINPHONE_SDK_VERSION=\\\"5.2.99\\\"",
 				);
 				OTHER_SWIFT_FLAGS = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = org.linphone.phone;
+				PRODUCT_BUNDLE_IDENTIFIER = com.coraltele.sanchar;
 				PRODUCT_MODULE_NAME = "$(PRODUCT_NAME:c99extidentifier)app";
-				PRODUCT_NAME = linphone;
+				PRODUCT_NAME = sanchar;
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = NO;
@@ -5955,13 +5956,13 @@
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = Z2V957B3D6;
+				DEVELOPMENT_TEAM = G4B324GPH6;
 				ENABLE_BITCODE = NO;
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = s;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = linphone_Prefix.pch;
+				GCC_PREFIX_HEADER = sanchar_Prefix.pch;
 				GCC_PREPROCESSOR_DEFINITIONS = "$(inherited)";
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				GCC_TREAT_IMPLICIT_FUNCTION_DECLARATIONS_AS_ERRORS = YES;
@@ -5974,7 +5975,8 @@
 				);
 				IBC_MODULE = linphoneapp;
 				IBSC_MODULE = linphoneapp;
-				INFOPLIST_FILE = "linphone-Info.plist";
+				INFOPLIST_FILE = "sanchar-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = Sanchar;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
@@ -5992,9 +5994,9 @@
 					"-DLINPHONE_SDK_VERSION=\\\"5.2.99\\\"",
 				);
 				OTHER_SWIFT_FLAGS = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = org.linphone.phone;
+				PRODUCT_BUNDLE_IDENTIFIER = com.coraltele.sanchar;
 				PRODUCT_MODULE_NAME = "$(PRODUCT_NAME:c99extidentifier)app";
-				PRODUCT_NAME = linphone;
+				PRODUCT_NAME = sanchar;
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = NO;
@@ -6080,13 +6082,13 @@
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = Z2V957B3D6;
+				DEVELOPMENT_TEAM = G4B324GPH6;
 				ENABLE_BITCODE = NO;
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = s;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = linphone_Prefix.pch;
+				GCC_PREFIX_HEADER = sanchar_Prefix.pch;
 				GCC_PREPROCESSOR_DEFINITIONS = "$(inherited)";
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				GCC_TREAT_IMPLICIT_FUNCTION_DECLARATIONS_AS_ERRORS = YES;
@@ -6099,7 +6101,8 @@
 				);
 				IBC_MODULE = linphoneapp;
 				IBSC_MODULE = linphoneapp;
-				INFOPLIST_FILE = "linphone-Info.plist";
+				INFOPLIST_FILE = "sanchar-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = Sanchar;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
@@ -6117,9 +6120,9 @@
 					"-DLINPHONE_SDK_VERSION=\\\"5.2.99\\\"",
 				);
 				OTHER_SWIFT_FLAGS = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = org.linphone.phone;
+				PRODUCT_BUNDLE_IDENTIFIER = com.coraltele.sanchar;
 				PRODUCT_MODULE_NAME = "$(PRODUCT_NAME:c99extidentifier)app";
-				PRODUCT_NAME = linphone;
+				PRODUCT_NAME = sanchar;
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = NO;
@@ -6204,13 +6207,13 @@
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = Z2V957B3D6;
+				DEVELOPMENT_TEAM = G4B324GPH6;
 				ENABLE_BITCODE = NO;
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = s;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = linphone_Prefix.pch;
+				GCC_PREFIX_HEADER = sanchar_Prefix.pch;
 				GCC_PREPROCESSOR_DEFINITIONS = "$(inherited)";
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				GCC_TREAT_IMPLICIT_FUNCTION_DECLARATIONS_AS_ERRORS = YES;
@@ -6223,7 +6226,8 @@
 				);
 				IBC_MODULE = linphoneapp;
 				IBSC_MODULE = linphoneapp;
-				INFOPLIST_FILE = "linphone-Info.plist";
+				INFOPLIST_FILE = "sanchar-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = Sanchar;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
@@ -6241,9 +6245,9 @@
 					"-DLINPHONE_SDK_VERSION=\\\"5.2.99\\\"",
 				);
 				OTHER_SWIFT_FLAGS = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = org.linphone.phone;
+				PRODUCT_BUNDLE_IDENTIFIER = com.coraltele.sanchar;
 				PRODUCT_MODULE_NAME = "$(PRODUCT_NAME:c99extidentifier)app";
-				PRODUCT_NAME = linphone;
+				PRODUCT_NAME = sanchar;
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = NO;
@@ -6281,7 +6285,7 @@
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = Z2V957B3D6;
+				DEVELOPMENT_TEAM = G4B324GPH6;
 				ENABLE_BITCODE = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -6293,7 +6297,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				MARKETING_VERSION = 5.1.1;
 				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = org.linphone.phone.linphoneExtension;
+				PRODUCT_BUNDLE_IDENTIFIER = com.coraltele.sanchar.sancharExtension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SKIP_INSTALL = YES;
@@ -6324,7 +6328,7 @@
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = Z2V957B3D6;
+				DEVELOPMENT_TEAM = G4B324GPH6;
 				ENABLE_BITCODE = NO;
 				ENABLE_NS_ASSERTIONS = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -6335,7 +6339,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				MARKETING_VERSION = 5.1.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_BUNDLE_IDENTIFIER = org.linphone.phone.linphoneExtension;
+				PRODUCT_BUNDLE_IDENTIFIER = com.coraltele.sanchar.sancharExtension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				STRIP_SWIFT_SYMBOLS = NO;
@@ -6366,7 +6370,7 @@
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = Z2V957B3D6;
+				DEVELOPMENT_TEAM = G4B324GPH6;
 				ENABLE_BITCODE = NO;
 				ENABLE_NS_ASSERTIONS = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -6377,7 +6381,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				MARKETING_VERSION = 5.1.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_BUNDLE_IDENTIFIER = org.linphone.phone.linphoneExtension;
+				PRODUCT_BUNDLE_IDENTIFIER = com.coraltele.sanchar.sancharExtension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SKIP_INSTALL = YES;
@@ -6409,7 +6413,7 @@
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = Z2V957B3D6;
+				DEVELOPMENT_TEAM = G4B324GPH6;
 				ENABLE_BITCODE = NO;
 				ENABLE_NS_ASSERTIONS = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -6420,7 +6424,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				MARKETING_VERSION = 5.1.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_BUNDLE_IDENTIFIER = org.linphone.phone.linphoneExtension;
+				PRODUCT_BUNDLE_IDENTIFIER = com.coraltele.sanchar.sancharExtension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SKIP_INSTALL = YES;
@@ -6503,7 +6507,7 @@
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = Z2V957B3D6;
+				DEVELOPMENT_TEAM = G4B324GPH6;
 				ENABLE_BITCODE = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -6522,7 +6526,7 @@
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				OTHER_SWIFT_FLAGS = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = org.linphone.phone.msgNotificationService;
+				PRODUCT_BUNDLE_IDENTIFIER = com.coraltele.sanchar.msgNotificationService;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
@@ -6559,7 +6563,7 @@
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = Z2V957B3D6;
+				DEVELOPMENT_TEAM = G4B324GPH6;
 				ENABLE_BITCODE = NO;
 				ENABLE_NS_ASSERTIONS = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -6574,7 +6578,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				OTHER_SWIFT_FLAGS = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = org.linphone.phone.msgNotificationService;
+				PRODUCT_BUNDLE_IDENTIFIER = com.coraltele.sanchar.msgNotificationService;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
@@ -6611,7 +6615,7 @@
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = Z2V957B3D6;
+				DEVELOPMENT_TEAM = G4B324GPH6;
 				ENABLE_BITCODE = NO;
 				ENABLE_NS_ASSERTIONS = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -6626,7 +6630,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				OTHER_SWIFT_FLAGS = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = org.linphone.phone.msgNotificationService;
+				PRODUCT_BUNDLE_IDENTIFIER = com.coraltele.sanchar.msgNotificationService;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
@@ -6663,7 +6667,7 @@
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = Z2V957B3D6;
+				DEVELOPMENT_TEAM = G4B324GPH6;
 				ENABLE_BITCODE = NO;
 				ENABLE_NS_ASSERTIONS = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -6678,7 +6682,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				OTHER_SWIFT_FLAGS = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = org.linphone.phone.msgNotificationService;
+				PRODUCT_BUNDLE_IDENTIFIER = com.coraltele.sanchar.msgNotificationService;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
@@ -6715,7 +6719,7 @@
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = Z2V957B3D6;
+				DEVELOPMENT_TEAM = G4B324GPH6;
 				ENABLE_BITCODE = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -6734,7 +6738,7 @@
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				OTHER_SWIFT_FLAGS = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = org.linphone.phone.msgNotificationContent;
+				PRODUCT_BUNDLE_IDENTIFIER = com.coraltele.sanchar.msgNotificationContent;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
@@ -6771,7 +6775,7 @@
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = Z2V957B3D6;
+				DEVELOPMENT_TEAM = G4B324GPH6;
 				ENABLE_BITCODE = NO;
 				ENABLE_NS_ASSERTIONS = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -6786,7 +6790,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				OTHER_SWIFT_FLAGS = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = org.linphone.phone.msgNotificationContent;
+				PRODUCT_BUNDLE_IDENTIFIER = com.coraltele.sanchar.msgNotificationContent;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
@@ -6823,7 +6827,7 @@
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = Z2V957B3D6;
+				DEVELOPMENT_TEAM = G4B324GPH6;
 				ENABLE_BITCODE = NO;
 				ENABLE_NS_ASSERTIONS = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -6838,7 +6842,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				OTHER_SWIFT_FLAGS = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = org.linphone.phone.msgNotificationContent;
+				PRODUCT_BUNDLE_IDENTIFIER = com.coraltele.sanchar.msgNotificationContent;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
@@ -6875,7 +6879,7 @@
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = Z2V957B3D6;
+				DEVELOPMENT_TEAM = G4B324GPH6;
 				ENABLE_BITCODE = NO;
 				ENABLE_NS_ASSERTIONS = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -6890,7 +6894,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				OTHER_SWIFT_FLAGS = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = org.linphone.phone.msgNotificationContent;
+				PRODUCT_BUNDLE_IDENTIFIER = com.coraltele.sanchar.msgNotificationContent;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
@@ -6904,7 +6908,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "linphone" */ = {
+		1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "sanchar" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1D6058940D05DD3E006BFB54 /* Debug */,
@@ -6915,7 +6919,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		61AE366120C00B370089D9D3 /* Build configuration list for PBXNativeTarget "linphoneExtension" */ = {
+		61AE366120C00B370089D9D3 /* Build configuration list for PBXNativeTarget "sancharExtension" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				61AE365720C00B370089D9D3 /* Debug */,
@@ -6926,7 +6930,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "linphone" */ = {
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "sanchar" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C01FCF4F08A954540054247B /* Debug */,
