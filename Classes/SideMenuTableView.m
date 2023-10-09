@@ -58,19 +58,22 @@
 
 	_sideMenuEntries = [[NSMutableArray alloc] init];
 
-	[_sideMenuEntries
-		addObject:[[SideMenuEntry alloc] initWithTitle:NSLocalizedString(@"Assistant", nil)
-                                                 image:[UIImage imageNamed:@"menu_assistant.png"]
-											  tapBlock:^() {
-												[PhoneMainView.instance
-													changeCurrentView:AssistantView.compositeViewDescription];
-											  }]];
+    if(false) {
+        [_sideMenuEntries
+         addObject:[[SideMenuEntry alloc] initWithTitle:NSLocalizedString(@"Assistant", nil)
+                                                  image:[UIImage imageNamed:@"menu_assistant.png"]
+                                               tapBlock:^() {
+            [PhoneMainView.instance
+             changeCurrentView:AssistantView.compositeViewDescription];
+        }]];
+    }
+    
 	BOOL mustLink = ([LinphoneManager.instance lpConfigIntForKey:@"must_link_account_time"] > 0);
 	
 	MSList *accounts = [LinphoneManager.instance createAccountsNotHiddenList];
 	BOOL hasAccount = accounts != NULL;
 	bctbx_free(accounts);
-	if (mustLink && hasAccount && ![LinphoneManager.instance lpConfigIntForKey:@"hide_link_phone_number"]) {
+	if (false && mustLink && hasAccount && ![LinphoneManager.instance lpConfigIntForKey:@"hide_link_phone_number"]) {
 		[_sideMenuEntries
 			addObject:[[SideMenuEntry alloc] initWithTitle:NSLocalizedString(@"Link my account", nil)
                                                      image:[UIImage imageNamed:@"menu_link_account.png"]

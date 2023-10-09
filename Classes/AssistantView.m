@@ -136,7 +136,7 @@ static UICompositeViewDescription *compositeDescription = nil;
 		number_of_accounts_before = bctbx_list_size(accounts);
 		bctbx_free(accounts);
 		[self resetTextFields];
-		[self changeView:_welcomeView back:FALSE animation:FALSE];
+		[self changeView:_loginView back:FALSE animation:FALSE];
 	}
 	mustRestoreView = NO;
 	_outgoingView = DialerView.compositeViewDescription;
@@ -237,7 +237,7 @@ static UICompositeViewDescription *compositeDescription = nil;
 - (void)reset {
 	[LinphoneManager.instance removeAllAccounts];
 	[self resetTextFields];
-	[self changeView:_welcomeView back:FALSE animation:FALSE];
+	[self changeView:_loginView back:FALSE animation:FALSE];
 	_waitView.hidden = TRUE;
 }
 
@@ -753,7 +753,7 @@ static UICompositeViewDescription *compositeDescription = nil;
 #if DEBUG
 		UIAssistantTextField *atf =
 			(UIAssistantTextField *)[self findView:ViewElement_Domain inView:view ofType:UIAssistantTextField.class];
-		atf.text = @"test.linphone.org";
+		atf.text = @"";
 #endif
 	}
 	phone_number_length = 0;
@@ -803,12 +803,13 @@ static UICompositeViewDescription *compositeDescription = nil;
 		showError:[AssistantView
 					  errorForLinphoneAccountCreatorUsernameStatus:LinphoneAccountCreatorUsernameStatusInvalid]
 			 when:^BOOL(NSString *inputEntry) {
-			   LinphoneAccountCreatorUsernameStatus s =
-				   linphone_account_creator_set_username(account_creator, inputEntry.UTF8String);
-			   if (s != LinphoneAccountCreatorUsernameStatusOk)
-				   linphone_account_creator_set_username(account_creator, NULL);
-			   createUsername.errorLabel.text = [AssistantView errorForLinphoneAccountCreatorUsernameStatus:s];
-			   return s != LinphoneAccountCreatorUsernameStatusOk;
+//			   LinphoneAccountCreatorUsernameStatus s =
+//				   linphone_account_creator_set_username(account_creator, inputEntry.UTF8String);
+//			   if (s != LinphoneAccountCreatorUsernameStatusOk)
+//				   linphone_account_creator_set_username(account_creator, NULL);
+//			   createUsername.errorLabel.text = [AssistantView errorForLinphoneAccountCreatorUsernameStatus:s];
+//			   return s != LinphoneAccountCreatorUsernameStatusOk;
+        return false;
 			 }];
 	UIAssistantTextField *createPhone = [self findTextField:ViewElement_Phone];
 	[createPhone
@@ -816,29 +817,31 @@ static UICompositeViewDescription *compositeDescription = nil;
 					  errorForLinphoneAccountCreatorPhoneNumberStatus:LinphoneAccountCreatorPhoneNumberStatusInvalid]
 			 when:^BOOL(NSString *inputEntry) {
 
-			   UIAssistantTextField *countryCodeField = [self findTextField:ViewElement_PhoneCC];
-			   NSString *newStr =
-				   [countryCodeField.text substringWithRange:NSMakeRange(1, [countryCodeField.text length] - 1)];
-			   NSString *prefix = (inputEntry.length > 0) ? newStr : nil;
-			   LinphoneAccountCreatorPhoneNumberStatus s = linphone_account_creator_set_phone_number(
-				   account_creator, inputEntry.length > 0 ? inputEntry.UTF8String : NULL, prefix.UTF8String);
-			   if (s != LinphoneAccountCreatorPhoneNumberStatusOk) {
-				   linphone_account_creator_set_phone_number(account_creator, NULL, NULL);
-			   }
-
-			   createPhone.errorLabel.text = [AssistantView errorForLinphoneAccountCreatorPhoneNumberStatus:s];
-
-			   return s != LinphoneAccountCreatorPhoneNumberStatusOk;
+//			   UIAssistantTextField *countryCodeField = [self findTextField:ViewElement_PhoneCC];
+//			   NSString *newStr =
+//				   [countryCodeField.text substringWithRange:NSMakeRange(1, [countryCodeField.text length] - 1)];
+//			   NSString *prefix = (inputEntry.length > 0) ? newStr : nil;
+//			   LinphoneAccountCreatorPhoneNumberStatus s = linphone_account_creator_set_phone_number(
+//				   account_creator, inputEntry.length > 0 ? inputEntry.UTF8String : NULL, prefix.UTF8String);
+//			   if (s != LinphoneAccountCreatorPhoneNumberStatusOk) {
+//				   linphone_account_creator_set_phone_number(account_creator, NULL, NULL);
+//			   }
+//
+//			   createPhone.errorLabel.text = [AssistantView errorForLinphoneAccountCreatorPhoneNumberStatus:s];
+//
+//			   return s != LinphoneAccountCreatorPhoneNumberStatusOk;
+        return false;
 			 }];
 
 	UIAssistantTextField *password = [self findTextField:ViewElement_Password];
 	[password showError:[AssistantView
 							errorForLinphoneAccountCreatorPasswordStatus:LinphoneAccountCreatorPasswordStatusTooShort]
 				   when:^BOOL(NSString *inputEntry) {
-					 LinphoneAccountCreatorPasswordStatus s =
-						 linphone_account_creator_set_password(account_creator, inputEntry.UTF8String);
-					 password.errorLabel.text = [AssistantView errorForLinphoneAccountCreatorPasswordStatus:s];
-					 return s != LinphoneAccountCreatorPasswordStatusOk;
+//					 LinphoneAccountCreatorPasswordStatus s =
+//						 linphone_account_creator_set_password(account_creator, inputEntry.UTF8String);
+//					 password.errorLabel.text = [AssistantView errorForLinphoneAccountCreatorPasswordStatus:s];
+//					 return s != LinphoneAccountCreatorPasswordStatusOk;
+        return false;
 				   }];
 
 	UIAssistantTextField *password2 = [self findTextField:ViewElement_Password2];
@@ -851,22 +854,23 @@ static UICompositeViewDescription *compositeDescription = nil;
 	[email
 		showError:[AssistantView errorForLinphoneAccountCreatorEmailStatus:LinphoneAccountCreatorEmailStatusMalformed]
 			 when:^BOOL(NSString *inputEntry) {
-			   LinphoneAccountCreatorEmailStatus s =
-				   linphone_account_creator_set_email(account_creator, inputEntry.UTF8String);
-			   email.errorLabel.text = [AssistantView errorForLinphoneAccountCreatorEmailStatus:s];
-			   return s != LinphoneAccountCreatorEmailStatusOk;
+//			   LinphoneAccountCreatorEmailStatus s =
+//				   linphone_account_creator_set_email(account_creator, inputEntry.UTF8String);
+//			   email.errorLabel.text = [AssistantView errorForLinphoneAccountCreatorEmailStatus:s];
+//			   return s != LinphoneAccountCreatorEmailStatusOk;
+        return false;
 			 }];
 
 	UIAssistantTextField *domain = [self findTextField:ViewElement_Domain];
 	[domain showError:[AssistantView errorForLinphoneAccountCreatorDomainStatus:LinphoneAccountCreatorDomainInvalid]
 				 when:^BOOL(NSString *inputEntry) {
-				   if (![inputEntry isEqualToString:@""]) {
-					   LinphoneAccountCreatorDomainStatus s =
-						   linphone_account_creator_set_domain(account_creator, inputEntry.UTF8String);
-					   domain.errorLabel.text = [AssistantView errorForLinphoneAccountCreatorDomainStatus:s];
-					   return s != LinphoneAccountCreatorDomainOk;
-				   }
-				   return true;
+//				   if (![inputEntry isEqualToString:@""]) {
+//					   LinphoneAccountCreatorDomainStatus s =
+//						   linphone_account_creator_set_domain(account_creator, inputEntry.UTF8String);
+//					   domain.errorLabel.text = [AssistantView errorForLinphoneAccountCreatorDomainStatus:s];
+//					   return s != LinphoneAccountCreatorDomainOk;
+//				   }
+				   return false;
 				 }];
 
 	UIAssistantTextField *url = [self findTextField:ViewElement_URL];
@@ -1907,19 +1911,7 @@ UIColor *previousColor = (UIColor*)[sender backgroundColor]; \
 }
 
 - (IBAction)onBackClick:(id)sender {
-	if ([historyViews count] > 0) {
-		if (currentView == _createAccountActivateSMSView || currentView == _createAccountActivateEmailView || currentView == _qrCodeView) {
-			UIView *view = [historyViews lastObject];
-			[historyViews removeLastObject];
-			[self changeView:view back:TRUE animation:TRUE];
-		} else if (currentView == _welcomeView) {
-			[PhoneMainView.instance popCurrentView];
-		} else {
-			[self changeView:_welcomeView back:TRUE animation:TRUE];
-		}
-	} else {
-		[self onDialerClick:nil];
-	}
+        [self onDialerClick:nil];
 }
 
 - (IBAction)onDialerClick:(id)sender {
