@@ -1270,7 +1270,7 @@ void core_log_collection_upload_state_changed(LinphoneCore *core, LinphoneCoreLo
 																						withDefault:@""],
 													 nil]];
 		[picker setMessageBody:NSLocalizedString(@"Here are information about an issue I had on my device.\nI was "
-												 @"doing ...\nI expected Linphone to ...\nInstead, I got an "
+												 @"doing ...\nI expected Sanchar to ...\nInstead, I got an "
 												 @"unexpected result: ...",
 												 @"Template email for people wanting to send a bug report")
 						isHTML:NO];
